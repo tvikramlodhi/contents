@@ -1,0 +1,192 @@
++++
+title = 'Yojna Search'
+subtitle = "Apply Online"
+bgcolor = "black"
+date = 2024-09-06
+draft = false
+description =""
+image =""
+imageBig =""
+Categories = []
+authors = ["vikram Singh"]
+avatar  = "/images/"
++++ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content=" www.yojnaportal.com Schemes, yojnaportal Yojna Portal provides the latest updates and detainled infrormation on government schemes, policies, Jobs, Exams, Recruitment Jobs, Scholarships, College,  and benfits in India. Stay infromed and take advantage of available opportunities. ">
+     <meta name="google-adsense-account" content="ca-pub-4855323063398382">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="\styles\searchyojna.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Yojna Portal: All Schemes</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWSRPE5DVE');
+</script>
+
+<body>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Recently Update.">
+
+<button id="languageToggle" onclick="toggleLanguage()">हिन्दी</button>
+
+<div id="myBtnContainer">
+    <select id="filterDropdown" onchange="filterSelection(this.value)">
+        <option value="all">Show All</option>
+        <option value="central">Central</option>
+        <option value="mp">Madhya Pradesh</option>
+        <option value="up">Uttar Pradesh</option>
+        <option value="mh">Maharashtra</option>
+        <option value="hr">Hariyana</option>
+        <option value="punjab">Punjab</option>
+        <option value="rj">Rajasthan</option>
+        <option value="bihar">Bihar</option>
+    </select>
+</div>
+
+<div class="container1">
+    <div id="englishTable" class="language active">
+        <table id="myTableEnglish">
+            <thead>
+                <tr>
+                    <th>Scheme Title</th>
+                    <th>Division</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody id="myTbodyEnglish">
+                <tr class="filterDiv central">
+                    <td>
+                        <a href="https://student.v2kcomputers.com/2024/07/mp-board-supplementary-results-2024.html" target="_blank">
+                            10th And 12th Supplementary Results 2024
+                        </a>
+                    </td>
+                    <td>🔹31/07/2024</td>
+                    <td><a href="#"><button id="checkbtn"> Click Here </button></a></td>
+                </tr>
+                <tr class="filterDiv mp">
+                    <td>
+                        <a href="https://www.v2kcomputers.com/2022/05/sambal-card.html" target="_blank">
+                            Mukhya Mantri Sambal Yojna
+                        </a>
+                    </td>
+                    <td>Madhya Pradesh</td>
+                    <td><a href="#"><button id="checkbtn"> Click Here </button></a></td>
+                </tr>
+                <!-- Add more table rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="hindiTable" class="language">
+        <table id="myTableHindi">
+            <thead>
+               <tr>
+                    <th>Scheme Title</th>
+                    <th>Division</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody id="myTbodyHindi">
+                <tr class="filterDiv central">
+                    <td>
+                        <a href="https://student.v2kcomputers.com/2024/07/mp-board-supplementary-results-2024.html" target="_blank">
+                            10वीं और 12वीं पूरक परिणाम 2024
+                        </a>
+                    </td>
+                    <td>🔹31/07/2024</td>
+                    <td><a href="#"><button id="checkbtn"> Click Here </button></a></td>
+                </tr>
+                <tr class="filterDiv mp">
+                    <td>
+                        <a href="https://www.v2kcomputers.com/2022/05/sambal-card.html" target="_blank">
+                            मुख्यमंत्री संबल योजना
+                        </a>
+                    </td>
+                    <td>मध्य प्रदेश</td>
+                    <td><a href="#"><button id="checkbtn"> Click Here </button></a></td>
+                </tr>
+                <!-- Add more table rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+
+        // Filter English Table
+        table = document.getElementById("myTableEnglish");
+        tr = table.getElementsByTagName("tr");
+        for (i = 1; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                tr[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+            }
+        }
+
+        // Filter Hindi Table
+        table = document.getElementById("myTableHindi");
+        tr = table.getElementsByTagName("tr");
+        for (i = 1; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                tr[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+            }
+        }
+    }
+
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        for (i = 0; i < x.length; i++) {
+            x[i].classList.remove("show");
+            if (c === "all" || x[i].classList.contains(c)) {
+                x[i].classList.add("show");
+            }
+        }
+    }
+
+    function toggleLanguage() {
+        var englishTable = document.getElementById("englishTable");
+        var hindiTable = document.getElementById("hindiTable");
+        var languageToggle = document.getElementById("languageToggle");
+
+        if (englishTable.classList.contains("active")) {
+            englishTable.classList.remove("active");
+            hindiTable.classList.add("active");
+            languageToggle.textContent = "English";
+        } else {
+            hindiTable.classList.remove("active");
+            englishTable.classList.add("active");
+            languageToggle.textContent = "हिन्दी";
+        }
+    }
+
+    // Initialize filter on page load
+    filterSelection('all');
+</script>
+
+
+</body>
+</html>
