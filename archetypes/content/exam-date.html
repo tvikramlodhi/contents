@@ -1,0 +1,210 @@
++++
+title = 'Exam Date'
+subtitle = "Apply Online"
+bgcolor = "blue"
+date = 2024-09-06
+draft = false
+description =""
+categories = ["jobs", "tech"]
+tags = ["hugo", "tutorial"]
+image =""
+imageBig =""
+Categories = []
+authors = ["vikram Singh"]
+avatar  = "/images/"
++++ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content=" www.yojnaportal.com sarkari Results,Exams Date, new exam Recruitment lastdate, Sarkariresult.com, yojnaportal Yojna Portal provides the latest updates and detainled infrormation on government schemes, policies, Jobs, Exams, Recruitment Jobs, Scholarships, College,  and benfits in India. Stay infromed and take advantage of available opportunities. Exam date Reminder, योजना पोर्टल">
+    <meta name="google-adsense-account" content="ca-pub-4855323063398382">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Exams Date Reminder</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWSRPE5DVE');
+</script>
+</head>
+
+<body>
+
+<div class="examcontainer">
+    <h1 id="reminder" style="color: rgb(255, 78, 57); "> Exams Date Reminder</h1>
+    <table id="all-exams" style="display:none;">
+        <thead>
+            <tr>
+                <th  >Exam Name</th>  
+                <th >From Date</th>
+                <th >To Date</th>
+                <th >More Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>bord exam bord exam bord exam bord exam</td>
+                <td data-label="From Date">01-08-2024</td>
+                <td data-label="To Date">10-08-2024</td>
+                <td data-label="More Detail"><a href="#"> <button> Click here </button></a></td>
+            </tr>
+            <tr>
+                <td>other exam</td>
+                <td data-label="From Date">01-07-2024</td>
+                <td data-label="To Date">12-07-2024</td>
+                <td data-label="More Detail"><a href="#"><button> Click here </button></a></td>
+            </tr>
+            <tr>
+                <td>other exam</td>
+                <td data-label="From Date">11-09-2024</td>
+                <td data-label="To Date">12-09-2024</td>
+                <td data-label="More Detail"><a href="#"><button> Click here </button></a></td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+    <h2>Current Exams</h2>
+    <table id="current-exams">
+        <thead>
+            <tr>
+                <th  style="background-color: #4CAF50;">Exam Name</th>
+                <th style="background-color: #4CAF50;">From Date</th>
+                <th style="background-color: #4CAF50;">To Date</th>
+                <th style="background-color: #4CAF50;">More Detail</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Upcoming Exams</h2>
+    <table id="upcoming-exams">
+        <thead>
+            <tr>
+                <th style="background-color: #f4b400;">Exam Name</th>
+                <th style="background-color: #f4b400;">From Date</th>
+                <th style="background-color: #f4b400;">To Date</th>
+                <th style="background-color: #f4b400;">More Detail</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table><br><br>
+
+    <h2>Past Exams</h2>
+    <table id="past-exams">
+        <thead>
+            <tr>
+                <th style="background-color: rgb(255, 115, 68);">Exam Name</th>
+                <th style="background-color: rgb(255, 115, 68);">From Date</th>
+                <th style="background-color: rgb(255, 115, 68);">To Date</th>
+                <th style="background-color: rgb(255, 115, 68);">More Detail</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+
+
+</body>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+
+
+    
+
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+      
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+      
+         h2 {text-align: left;
+            font-size: 14px;}
+        
+    </style>
+
+
+
+
+<script>
+    function formatDate(dateStr) {
+        const fullMonthNames = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+        const monthAbbreviations = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+        
+        if (dateStr.includes('-')) {
+            const parts = dateStr.split('-');
+            if (parts.length === 3) {
+                // Format: dd-mm-yyyy
+                const [day, month, year] = parts;
+                return new Date(`${year}-${month}-${day}`);
+            } else if (parts.length === 2) {
+                // Format: month-yyyy (full month names or abbreviations)
+                const [month, year] = parts;
+                let monthIndex = fullMonthNames.indexOf(month.toLowerCase());
+                if (monthIndex === -1) {
+                    monthIndex = monthAbbreviations.indexOf(month.toLowerCase());
+                }
+                if (monthIndex !== -1) {
+                    return new Date(`${year}-${monthIndex + 1}-01`);
+                }
+            }
+        }
+        return null;
+    }
+
+    function categorizeExams() {
+        const today = new Date();
+        const allExamsTable = document.getElementById('all-exams');
+        const rows = allExamsTable.querySelectorAll('tbody tr');
+
+        rows.forEach(row => {
+            const fromDate = formatDate(row.cells[1].textContent);
+            const toDate = formatDate(row.cells[2].textContent);
+            let tableId = '';
+
+            if (fromDate && toDate) {
+                if (today >= fromDate && today <= toDate) {
+                    tableId = 'current-exams';
+                    row.classList.add('current-exam');
+                } else if (today < fromDate) {
+                    tableId = 'upcoming-exams';
+                    row.classList.add('upcoming-exam');
+                } else {
+                    tableId = 'past-exams';
+                    row.classList.add('past-exam');
+                }
+
+                const targetTable = document.getElementById(tableId).querySelector('tbody');
+                targetTable.appendChild(row.cloneNode(true));
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', categorizeExams);
+</script>
+</html>
