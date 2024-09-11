@@ -1,0 +1,7 @@
+baseURL = "https://tvikramlodhi.github.io/"
+languageCode = 'en-us'
+title = 'Yojna Portal'
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
